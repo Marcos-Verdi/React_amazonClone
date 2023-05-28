@@ -1,0 +1,334 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Header */
+
+.header {
+    height: 5em;
+    background-color: rgb(7, 7, 49);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-logo-container {
+    flex: 2;
+    height: 100%;
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+.nav-logo {
+    padding: 0.25em;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.nav-search {
+    flex: 5;
+    margin: 0 1em 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-search-input {
+    padding: 0.5em 1em;
+    flex: 13;
+    height: 80%;
+}
+
+.nav-search-logo {
+    flex: 2;
+    padding: 0.25em 0.05em;
+    height: 100%;
+    width: 1em;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nav-links {
+    flex: 4;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.05em;
+    letter-spacing: 0.05em;
+    color: white;
+}
+
+.nav-link-signin,
+.nav-link-orders,
+.nav-link-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.link-lineOne {
+    font-size: 0.8em;
+}
+
+.link-lineTwo {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.nav-link-cartImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-cart-counter {
+    margin-left: 0.5em;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+}
+
+/* Product */
+
+.product {
+    width: 100%;
+}
+
+.product-info {
+    padding: 2em;
+    margin: 0 1em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 400px;
+    min-width: 100px;
+}
+
+.product-rating {
+    display: flex;
+}
+
+.product-rating p {
+    margin: 0 0.1em;
+}
+
+.product-star {
+    color: goldenrod;
+}
+
+.product-info img {
+    object-fit: contain;
+    max-height: 200px;
+    width: 100%;
+}
+
+.product-button {
+    background-color: goldenrod;
+    font-weight: bold;
+    padding: 0.25em 1em;
+    cursor: pointer;
+    margin-top: 0.5em;
+}
+
+/* Home */
+
+.home {
+    background-color:lightblue;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+}
+
+.home--row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1.5em 1em;
+    width: 100%;
+}
+
+/* Checkout */
+
+.checkout {
+    height: 100vh;
+    margin: 0;
+    background-color:lavender;
+    display: grid;
+}
+
+.checkout-container {
+    height: 100%;
+    display: flex;
+    margin: 1em;
+}
+
+.checkout-basket {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.checkout-items {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.checkout-item {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 0.5em 1.5em;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+    height: 15em;
+}
+
+.checkout-item--img {
+    height: 100%;
+    width: 10em;
+    object-fit: contain;
+    margin-right: 1em;
+}
+
+.checkout-item--info {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.checkout-item--button {
+    background-color: goldenrod;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5em 1.5em;
+}
+
+.checkout-summary {
+    flex: 2;
+    background-color: white;
+    padding: 0.5em;
+    margin-left: 1em;
+    height: 10em;
+    border-radius: 5px;
+}
+
+.checkout-summary-total {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.checkout-summary--button {
+    padding: 0.5em;
+    width: 100%;
+    background-color: goldenrod;
+    margin-top: 1em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Basket Item */
+
+.checkout-item--star-container {
+    display: flex;
+}
+
+/* Login Page */
+
+.login-container {
+    height: 100vh;
+    width: 100vw;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.login-logo {
+    height: 4rem;
+    width: 8rem;
+    object-fit: contain;
+    padding: 1em;
+    background-color: rgb(7, 7, 49);
+}
+
+.login-form-container {
+    width: 25%;
+    height: 50%;
+    border: 1px solid gray;
+    padding: 1em;
+    margin: 1em auto;
+}
+
+.login-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.login-form-label {
+    font-weight: bold;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.25em;
+}
+
+.login-form-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
+.login-form-button {
+    margin-top: 1rem;
+    padding: 0.25rem 0;
+    width: 100%;
+    font-weight: bold;
+    background-color: goldenrod;
+    cursor: pointer;
+}
+
+.login-agreement-text {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.create-account-button {
+    padding: 0.25rem 0;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
